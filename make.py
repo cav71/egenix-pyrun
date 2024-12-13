@@ -156,7 +156,7 @@ PyRun Unicode: {PYTHONUNICODE}
 PyRun distribution name: {BINARY_DISTRIBUTION}.tgz
 PyRun binary: {BINDIR}/{PYRUN}
 PyRun SSL dir: {PYRUN_SSL}
-""".format(**dc.asdict(config)))
+""".format(**{"sys": sys, **dc.asdict(config)}))
 
     config_json = {
         k: str(v) if isinstance(v, Path) else v
