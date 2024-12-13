@@ -1,4 +1,4 @@
-name: Master build
+name: Main branch merge
 
 on:
   push:
