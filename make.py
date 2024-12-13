@@ -148,6 +148,7 @@ def get_full_target_pythonversion(version: str, micro: None | int) -> None | str
 
 def show_version(config):
     print("""
+Python version (executable): {sys.version} ({sys.executable})
 PyRun version: {PACKAGEVERSION}
 Python version: {PYTHONFULLVERSION} ('{PYTHONVERSION}' = '{PYTHONMAJORVERSION}'.'{PYTHONMINORVERSION}')
 PyRun platform: {PLATFORM}
