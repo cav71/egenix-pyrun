@@ -47,7 +47,7 @@ jobs:
       - name: Build Pyrun
         shell: bash
         env:
-          XOS=${{ matrix.os }}
+          XOS: ${{ matrix.os }}
         run: |
           echo "Running on: $XOS"
           echo "Runtime python: $(python3 -V)"
