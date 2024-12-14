@@ -43,5 +43,8 @@ jobs:
 
       - name: Build Pyrun
         shell: bash
+        env:
+          XOS=${{ matrix.os }}
         run: |
-            python make.py ${{ matrix.python-version }}
+          echo "Running on: $XOS"
+          echo "Runtime python: $(python3 -V)"
